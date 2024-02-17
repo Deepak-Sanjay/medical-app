@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="Firstaid"
+    android:layout_gravity="center"
+    android:id="@+id/Snakebite"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtsb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Snake Bite"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700"
+                />
+
+            <TextView
+                android:id="@+id/tamiltxt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="பாம்பு கடி"
+                android:textSize="41dp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                />
+
+            <VideoView
+                android:id="@+id/vidvwsb1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:text="Immediate Process:"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_marginTop="20dp"
+                android:text="    Immediately move away from the area where the bite occurred. If the snake is still attached use a stick or tool to make it let go. Sea snake victims need to be moved to dry land to avoid drowning.
+    Remove anything tight from around the bitten part of the body (e.g.: rings, anklets, bracelets) as these can cause harm if swelling occurs. Reassure the victim. Many snake bites are caused by non-venomous snakes. And even after most venomous snake bites the risk of death is not immediate.
+    Immobilize the person completely. Splint the limb to keep it still. Use a makeshift stretcher to carry the person to a place where transport is available to take them to a health facility.
+ Never use a tight arterial tourniquet. The Australian Pressure Immobilization Bandage (PIB) Method is only recommended for bites by neurotoxic snakes that do not cause local swelling.
+    Applying pressure at the bite site with a pressure pad may be suitable in some cases.
+    Avoid traditional first aid methods, herbal medicines and other unproven or unsafe forms of first aid.
+    Transport the person to a health facility as soon as possible. Paracetamol may be given for local pain (which can be severe).    Vomiting may occur, so place the person on their left side in the recovery position.
+    Closely monitor airway and breathing and be ready to resuscitate if necessary."
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

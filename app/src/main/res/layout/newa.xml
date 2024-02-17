@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="@dimen/spacing_6"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/aimageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/chatbot" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+            <TextView
+               android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLines="3"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/euclidcirculara_bold"
+                android:text="Health Articles" />
+            <TextView
+                android:id="@+id/sorce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:maxLines="3"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/euclidcirculara_regular"
+                android:text="Health Articles" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

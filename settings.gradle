@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://dl.google.com/dl/android/maven2/' }
+        maven {
+            url 'https://repo.example.com/maven2'
+        }
+        maven {
+            url 'file://local/repo/'
+        }
+        ivy {
+            url 'https://repo.example.com/ivy'
+        }
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "Medical Application System"
+include ':app'
